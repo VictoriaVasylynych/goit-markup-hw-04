@@ -1,5 +1,5 @@
 :root {
-  --accnet-color: #2196f3;
+  --accent-color: #2196f3;
   --text-color: #757575;
   --title-text-color: #212121;
 }
@@ -74,7 +74,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--accnet-color);
+  color: var(--accent-color);
   margin-right: 93px;
 }
 
@@ -93,10 +93,10 @@ body {
 }
 .menu-link:hover,
 .menu-link:focus {
-  color: var(--accnet-color);
+  color: var(--accent-color);
 }
 .menu-link.current {
-  color: var(--accnet-color);
+  color: var(--accent-color);
 }
 .contact-link {
   font-weight: 500;
@@ -105,10 +105,24 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-
+.mail-icon{
+  margin-right: 10px;
+  fill: #757575;
+}
+.mail-icon:hover,
+.mail-icon:focus {
+ color: var(--accent-color); 
+}
+.smartphone-icon{
+  margin-right: 10px;
+}
+.smartphone-icon:hover,
+.smartphone-icon:focus {
+ color: var(--accent-color); 
+}
 .contact-link:hover,
 .contact-link:focus {
-  color: var(--accnet-color);
+  color: var(--accent-color);
 }
 .contact-item:not(:first-child) {
   margin-left: 50px;
@@ -117,8 +131,20 @@ body {
 
 /*HERO*/
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+    to right, rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ), 
+   url(../images/overlay/overlay.jpg);
   background-color: #2f303a;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
 }
 .hero-container {
   padding-top: 200px;
@@ -247,7 +273,29 @@ body {
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
+.social-list{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.social-list-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: #ffffff
+  background-color:var(--accent-color)
+}
+
 /*END TEAM*/
 
 /*FOOTER*/
@@ -263,7 +311,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--accnet-color);
+  color: var(--accent-color);
 }
 .footer-logo-color {
   color: #ffffff;
@@ -277,7 +325,7 @@ body {
 }
 .footer-item-link:hover,
 .footer-item-link:focus {
-  color: var(--accnet-color);
+  color: var(--accent-color);
 }
 .footer-address {
   margin-bottom: 20px;
@@ -323,11 +371,11 @@ body {
 }
 .filter-button:hover,
 .filter-button:focus {
-  background-color: var(--accnet-color);
+  background-color: var(--accent-color);
   color: #ffffff;
 }
 .filter-button.current {
-  background-color: var(--accnet-color);
+  background-color: var(--accent-color);
   color: #ffffff;
 }
 
