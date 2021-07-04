@@ -109,20 +109,20 @@ body {
   margin-right: 10px;
   fill: #757575;
 }
-.mail-icon:hover,
-.mail-icon:focus {
+.contact-link:hover .mail-icon,
+.contact-link:focus .mail-icon{
   fill: var(--accent-color);
-}
+} 
 .smartphone-icon{
   margin-right: 10px;
   fill: #757575;
 }
-.smartphone-icon:hover,
-.smartphone-icon:focus {
+.contact-link:hover .smartphone-icon,
+.contact-link:focus .smartphone-icon{
   fill: var(--accent-color);
 }
 .contact-link:hover,
-.contact-link:focus {
+.contact-link:focus{
   color: var(--accent-color);
 }
 .contact-item:not(:first-child) {
@@ -193,19 +193,19 @@ body {
 .about-list {
   display: flex;
   margin-left: -30px;
+  align-items: center;
 }
 .about-item {
   margin-left: 30px;
 }
-.about-item::before{
-  display: block;
-  content: '';
+.about-image{
+  display: flex;
+  width: 270px;
   height: 120px;
- background-color: #F5F4FA;
+  background-color:#F5F4FA;
   margin-bottom: 30px;
-  background-image: url('../images/icons.svg/#icon-antenna');
-  background-size: contain;
-
+  align-items: center;
+  justify-content: center;
 }
 .about-title {
   font-weight: bold;
@@ -249,7 +249,6 @@ body {
   margin-left: -30px;
   margin-top: -30px;
 }
-
 .team-item {
   margin-left: 30px;
   margin-top: 30px;
@@ -296,8 +295,8 @@ body {
 .social-list-icon{
   fill: #C4C4C4;
 }
-.social-list-icon:hover,
-.social-list-icon:focus{
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
   fill: #ffffff;
 }
 .social-list-link{
@@ -311,7 +310,7 @@ body {
 }
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: var(--accent-color)
+  background-color: var(--accent-color);
 }
 
 
@@ -412,10 +411,9 @@ margin-bottom: 50px;
   color: #ffffff;
 }
 .footer-social-links{
-
   margin-left: 70px;
 }
-.footer-title{
+.footer-social-title{
  font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
@@ -425,16 +423,28 @@ color: #FFFFFF;
 }
 .footer-social-list{
   display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.footer-social-item:not(:last-child) {
+  margin-right: 10px
+}
+.footer-social-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  padding-top: 20px;
   border-radius: 50%;
-
+  background-color: rgba(255, 255, 255, 0.1);
+  
+}
+.footer-social-link:hover,
+.footer-social-link:focus{
+ background-color: var(--accent-color);
 }
 .footer-social-icon{
   fill: #FFFFFF;
-  background-color: rgba(255, 255, 255, 0.1);
-  
 }
 
 /*END FOOTER*/
@@ -467,6 +477,7 @@ color: #FFFFFF;
 .filter-button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-button.current {
   background-color: var(--accent-color);
@@ -488,6 +499,9 @@ color: #FFFFFF;
 }
 .portfolio-link {
   display: block;
+}
+.portfolio-link:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
 }
 .portfolio-card {
   background: #ffffff;
